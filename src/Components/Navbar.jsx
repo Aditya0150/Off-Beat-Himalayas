@@ -9,9 +9,9 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > lastScrollY) {
-        setIsVisible(false); // Hide navbar when scrolling down
+        setIsVisible(false);
       } else {
-        setIsVisible(true); // Show navbar when scrolling up
+        setIsVisible(true);
       }
       setLastScrollY(window.scrollY);
     };
